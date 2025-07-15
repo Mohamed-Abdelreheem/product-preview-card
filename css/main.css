@@ -1,0 +1,134 @@
+/* Global Styles */
+:root{
+  --Green500: hsl(158, 36%, 37%);
+  --Green700: hsl(158, 42%, 18%);
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, Fraunces, Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: var(--Cream);
+  overflow: hidden;
+}
+/* Page Styles */
+.container{
+  width: 560px;
+  height: 405px;
+  margin: 6.5rem auto 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--White);
+  border-radius: 0.7rem;
+}
+@media (min-width: 375px) and (max-width: 768px){
+  .container{
+    height: 43.75rem;
+    flex-direction: column;
+    width: 93%;
+    margin-top: 3.25rem;
+  }
+}
+.container .image img.desktop{
+  width: 270px;
+  border-bottom-left-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+}
+.container .image img.mobile{
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  visibility: hidden;
+  position: absolute;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .container .image img.desktop{
+    position: absolute;
+    visibility: hidden;
+  }
+  .container .image img.mobile{
+    visibility: visible;
+    width: 100%;
+    position: unset;
+    margin-top: -2.8rem;
+  }
+  
+}
+.container .details{
+  margin:1.5rem 0 0 1.5rem;
+  text-transform: capitalize;
+}
+@media (min-width: 375px) and (max-width: 768px){
+  .container .details{
+    margin-top: 1rem;
+  }
+}
+.container .details p{
+  color: var(--Grey);
+  font-size: 0.9rem;
+  padding-right: 2.25rem;
+}
+.container .details p:first-child{
+  text-transform: uppercase;
+  letter-spacing: 0.45rem;
+}
+@media (min-width: 375px) and (max-width: 768px){
+  .container .details p:nth-of-type(2){
+    padding-right: 1rem;
+    margin-top: 1rem;
+  }
+}
+.container .details h1{
+  color: var(--Black);
+  font-family: Fraunces;
+  padding-right: 4.25rem;
+}
+@media (min-width: 375px) and (max-width: 768px){
+  .container .details h1{
+    padding-right: 1rem;
+    margin-top: 1rem;
+  }
+}
+.container .details p.price{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1.25rem;
+  gap: 0.625rem;
+}
+.container .details p.price span{
+  color: var(--Green500);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Fraunces;
+}
+@media (min-width: 375px) and (max-width: 768px){
+  .container .details .price span{
+    margin-top: -0.5rem;
+  };
+}
+.container .details p.price del{
+  font-size: 12px;
+}
+button{
+  width: 85%;
+  margin-top: 1rem;
+  padding: 10px 0;
+  background-color: var(--Green500);
+  color: var(--White);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+button:hover{
+  background-color: var(--Green700);
+}
