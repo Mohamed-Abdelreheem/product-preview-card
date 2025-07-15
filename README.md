@@ -25,8 +25,8 @@ This is Product preview card component for  Perfume
 
 ### Links
 
-- Solution URL: (https://github.com/Mohamed-Abdelreheem/Recipe-page)
-- Live Site URL: (https://mohamed-abdelreheem.github.io/Social-links-profile-challenge/)
+- Solution URL: (https://github.com/Mohamed-Abdelreheem/product-preview-card)
+- Live Site URL: (https://mohamed-abdelreheem.github.io/product-preview-card/)
 
 
 ### Built with
